@@ -233,6 +233,115 @@ h1 {
   color: var(--muted);
 }
 
+.dashboard-preview {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border: 1px solid var(--border);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.dashboard-sidebar {
+  background: var(--bg);
+  color: white;
+  padding: 1rem;
+}
+
+.dashboard-brand {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.dashboard-item {
+  padding: 0.7rem 0.5rem;
+  border-radius: 0.7rem;
+  margin-bottom: 0.35rem;
+  color: #cbd5e1;
+}
+
+.dashboard-item.active {
+  background: rgba(255,255,255,0.12);
+  color: white;
+}
+
+.dashboard-main {
+  padding: 1rem;
+}
+
+.dashboard-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.dashboard-topbar p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+}
+
+.button.small {
+  padding: 0.6rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.mini-card {
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  padding: 0.9rem;
+  background: #f8fafc;
+}
+
+.mini-card h4 {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+.mini-card p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.dashboard-chat {
+  border: 1px solid var(--border);
+  border-radius: 0.95rem;
+  padding: 1rem;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 0.8rem 0.9rem;
+  border-radius: 1rem;
+  font-size: 0.95rem;
+}
+
+.bubble.user {
+  background: #e2e8f0;
+  align-self: flex-end;
+}
+
+.bubble.ai {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

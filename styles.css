@@ -336,6 +336,21 @@ h1 {
   font-size: 1.05rem;
 }
 
+.dashboard-screen-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.dashboard-screen-grid img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: white;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+}
+
 .dashboard-chat {
   border: 1px solid var(--border);
   border-radius: 0.95rem;

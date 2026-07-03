@@ -3,204 +3,209 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafuor | Distribución inteligente para alimentos</title>
+    <title>Champis | Tu negocio de distribución, ordenado con Sofía</title>
     <meta
       name="description"
-      content="Cafuor ayuda a distribuidores y equipos de ventas a organizar pedidos, seguimiento y crecimiento con una plataforma simple y efectiva."
+      content="Champis es el panel del distribuidor: pedidos, clientes, cobros, inventario y finanzas ordenados desde el chat. Sofía anota, organiza y te avisa por ti."
     />
+    <meta name="theme-color" content="#0aa05a" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
+    <header class="site-header">
       <nav class="nav container">
-        <a href="#" class="brand">Cafuor</a>
-        <div class="nav-links">
-          <a href="#problemas">El problema</a>
+        <a href="#" class="brand" aria-label="Champis">
+          <span class="brand-logo" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="34" height="34" role="img">
+              <path d="M20 3C10.6 3 4 9.4 4 16.4c0 2 1.6 3.6 3.6 3.6h24.8c2 0 3.6-1.6 3.6-3.6C36 9.4 29.4 3 20 3Z" fill="#e8543d"/>
+              <ellipse cx="14" cy="12" rx="2.6" ry="2.2" fill="#fbe3d6"/>
+              <ellipse cx="24" cy="10.5" rx="2" ry="1.7" fill="#fbe3d6"/>
+              <ellipse cx="28.5" cy="15" rx="1.7" ry="1.4" fill="#fbe3d6"/>
+              <path d="M16.5 20h7l-1.1 12.4a2.4 2.4 0 0 1-4.8 0L16.5 20Z" fill="#f4d9c3"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <strong>Champis</strong>
+            <em>Panel del distribuidor</em>
+          </span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#problema">El problema</a>
           <a href="#como-funciona">Cómo funciona</a>
-          <a href="#features">Funciones</a>
+          <a href="#producto">Producto</a>
+          <a href="#funciones">Funciones</a>
           <a href="#contacto">Contacto</a>
-          <a class="button secondary" href="http://cafuor.vercel.app/distribuidores" target="_blank" rel="noopener noreferrer">Acceso distribuidores</a>
+          <a class="button ghost" href="http://cafuor.vercel.app/distribuidores" target="_blank" rel="noopener noreferrer">Acceso distribuidores</a>
         </div>
       </nav>
 
-      <div class="container hero-grid">
+      <div class="container hero">
         <div class="hero-copy">
-          <p class="eyebrow">Panel del distribuidor</p>
-          <h1>Tu negocio de distribución, ordenado desde chat, pedidos, cobros y finanzas.</h1>
+          <p class="eyebrow"><span class="dot"></span> Panel del distribuidor</p>
+          <h1>Tu negocio de distribución, ordenado desde <span class="hl">el chat</span>.</h1>
           <p class="lead">
-            Pensado para distribuidores de comida que hoy llevan todo en cuadernos, WhatsApp y la cabeza.
-            Sofía actúa como una secretaria experta 24/7, y el panel centraliza la operación real del día a día.
+            Pedidos, clientes, cobros, inventario y finanzas en un solo lugar.
+            Sofía actúa como tu secretaria experta 24/7: anota lo que le hablas o
+            escribes, identifica clientes, controla el stock y te avisa a quién cobrar.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#contacto">Probar gratis</a>
-            <a class="button ghost" href="http://cafuor.vercel.app/distribuidores" target="_blank" rel="noopener noreferrer">Habla con Sofía</a>
+            <a class="button soft" href="http://cafuor.vercel.app/distribuidores" target="_blank" rel="noopener noreferrer">Habla con Sofía</a>
           </div>
+          <ul class="hero-points">
+            <li>✅ Sin apps complicadas: le hablas como a una persona</li>
+            <li>✅ Pensado para distribuidores de comida en Chile</li>
+          </ul>
         </div>
 
-        <div class="hero-card">
-          <img
-            class="hero-image"
-            src="assets/hero-food.svg"
-            alt="Equipo trabajando con productos y distribución de alimentos"
-          />
-          <div class="hero-card-content">
-            <h3>¿Qué hace Sofía por ti?</h3>
-            <ul>
-              <li>Anota pedidos hablando o escribiendo</li>
-              <li>Identifica clientes y confirma precios</li>
-              <li>Controla stock y te avisa si alcanza</li>
-              <li>Te ayuda con cobranzas y cuentas del mes</li>
-            </ul>
+        <div class="hero-visual">
+          <div class="browser">
+            <div class="browser-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="browser-url">champis.cl</span>
+            </div>
+            <img src="assets/screens/chat.png" alt="Chat con Sofía, la asesora de Champis, dentro del panel del distribuidor" loading="eager" />
+          </div>
+          <div class="floating-card">
+            <span class="fc-icon">💬</span>
+            <div>
+              <strong>Sofía · en línea</strong>
+              <p>"Vicente pidió 10 kilos para el martes"</p>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="problemas" class="section container">
+      <section class="strip">
+        <div class="container strip-grid">
+          <div class="strip-item"><strong>Pedidos</strong><span>anotados por chat</span></div>
+          <div class="strip-item"><strong>Cobros</strong><span>sabes quién te debe</span></div>
+          <div class="strip-item"><strong>Inventario</strong><span>al día, sin sorpresas</span></div>
+          <div class="strip-item"><strong>Finanzas</strong><span>del mes, sin calculadora</span></div>
+        </div>
+      </section>
+
+      <section id="problema" class="section container">
         <div class="section-heading">
-          <p class="eyebrow">El problema</p>
+          <p class="eyebrow"><span class="dot"></span> El problema</p>
           <h2>Cuando el negocio crece, los papelitos, los mensajes y la cabeza ya no bastan.</h2>
         </div>
         <div class="cards">
           <article class="card">
+            <span class="card-icon">📝</span>
             <h3>Pedidos perdidos</h3>
-            <p>Los pedidos quedan anotados en WhatsApp, papelitos o la memoria, y se escapan.</p>
+            <p>Quedan anotados en WhatsApp, papelitos o la memoria, y algunos se te escapan.</p>
           </article>
           <article class="card">
+            <span class="card-icon">💸</span>
             <h3>Sin control de cobros</h3>
-            <p>No sabes quién te debe y cuando cobrar, y las cuentas del mes se vuelven un dolor de cabeza.</p>
+            <p>No sabes con claridad quién te debe ni cuándo cobrar, y las cuentas del mes se vuelven un dolor de cabeza.</p>
           </article>
           <article class="card">
+            <span class="card-icon">📦</span>
             <h3>Stock poco claro</h3>
-            <p>No tienes claro si te alcanza el inventario para cumplir con lo que ya prometiste.</p>
+            <p>No tienes seguridad de si te alcanza el inventario para cumplir con lo que ya prometiste.</p>
           </article>
         </div>
       </section>
 
       <section id="como-funciona" class="section section-alt">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Cómo funciona</p>
-            <h2>Hablas como a una persona y Sofía hace el trabajo pesado.</h2>
+          <div class="section-heading center">
+            <p class="eyebrow"><span class="dot"></span> Cómo funciona</p>
+            <h2>Le hablas como a una persona y Sofía hace el trabajo pesado.</h2>
           </div>
           <div class="steps">
             <div class="step">
-              <span>01</span>
+              <span class="step-num">01</span>
               <h3>Le hablas o escribes</h3>
-              <p>Como: “Vicente me pidió 10 kilos para el martes” y ella lo entiende.</p>
+              <p>“Vicente me pidió 10 kilos para el martes” y ella lo entiende al instante.</p>
             </div>
             <div class="step">
-              <span>02</span>
+              <span class="step-num">02</span>
               <h3>Sofía lo organiza</h3>
               <p>Identifica al cliente, confirma el precio y anota el pedido automáticamente.</p>
             </div>
             <div class="step">
-              <span>03</span>
+              <span class="step-num">03</span>
               <h3>Todo queda ordenado</h3>
-              <p>Tu panel centraliza pedidos, stock, cobranzas y cuentas para que trabajes mejor.</p>
+              <p>Tu panel centraliza pedidos, stock, cobranzas y cuentas para que operes mejor.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="features" class="section container">
-        <div class="section-heading">
-          <p class="eyebrow">Funciones</p>
-          <h2>Todo lo que necesitas para ordenar tu negocio de distribución, sin complicarte.</h2>
-        </div>
-        <div class="feature-list">
-          <div class="feature-item"><strong>Toma de pedidos</strong><span>Anota pedidos hablando o escribiendo, sin apps complicadas.</span></div>
-          <div class="feature-item"><strong>Clientes</strong><span>Toda la información de tus clientes en un solo lugar.</span></div>
-          <div class="feature-item"><strong>Inventario</strong><span>Sabe si te alcanza el stock para un pedido antes de comprometerlo.</span></div>
-          <div class="feature-item"><strong>Cobranzas</strong><span>Te dice quién te debe y te arma un PDF listo para WhatsApp.</span></div>
-          <div class="feature-item"><strong>Finanzas</strong><span>Cuánto compraste, vendiste y ganaste este mes, sin sacar la calculadora.</span></div>
-          <div class="feature-item"><strong>Rendiciones y gastos</strong><span>Le sacas foto a la boleta y ella la anota sola.</span></div>
+      <section id="producto" class="section container">
+        <div class="section-heading center">
+          <p class="eyebrow"><span class="dot"></span> El producto por dentro</p>
+          <h2>Un panel para toda la operación, no solo un chat.</h2>
+          <p class="section-sub">Explora las pantallas reales del panel del distribuidor.</p>
         </div>
 
-        <div class="dashboard-preview">
-          <div class="dashboard-sidebar">
-            <div class="dashboard-brand">Cafuor</div>
-            <div class="dashboard-item active">💬 Chat</div>
-            <div class="dashboard-item">📦 Pedidos</div>
-            <div class="dashboard-item">👥 Clientes</div>
-            <div class="dashboard-item">� Cobros</div>
-            <div class="dashboard-item">📈 Finanzas</div>
-            <div class="dashboard-item">🏦 Conciliación</div>
-            <div class="dashboard-item">⚙️ Ajustes</div>
+        <div class="showcase">
+          <div class="showcase-tabs" role="tablist">
+            <button class="show-tab active" data-screen="chat">💬 Chat</button>
+            <button class="show-tab" data-screen="pedidos">📦 Pedidos</button>
+            <button class="show-tab" data-screen="clientes">👥 Clientes</button>
+            <button class="show-tab" data-screen="cobros">💰 Cobros</button>
+            <button class="show-tab" data-screen="finanzas">📈 Finanzas</button>
+            <button class="show-tab" data-screen="conciliacion">🏦 Conciliación</button>
+            <button class="show-tab" data-screen="ajustes">⚙️ Ajustes</button>
           </div>
-          <div class="dashboard-main">
-            <div class="dashboard-topbar">
-              <div>
-                <strong>Panel del distribuidor</strong>
-                <p>Todo centralizado para operar mejor.</p>
+          <div class="showcase-stage">
+            <div class="browser wide">
+              <div class="browser-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="browser-url">champis.cl / <span id="screen-label">chat</span></span>
               </div>
-              <a class="button primary small" href="http://cafuor.vercel.app/distribuidores" target="_blank" rel="noopener noreferrer">Entrar</a>
-            </div>
-            <div class="dashboard-tabs">
-              <span class="tab active">Chat</span>
-              <span class="tab">Pedidos</span>
-              <span class="tab">Clientes</span>
-              <span class="tab">Cobros</span>
-            </div>
-            <div class="dashboard-screen-grid">
-              <img src="https://i.imgur.com/lF36oMf.png" alt="Vista del chat de Sofía" />
-              <img src="https://i.imgur.com/Nylqvk6.png" alt="Vista de pedidos" />
-              <img src="https://i.imgur.com/Mp7961u.png" alt="Vista de clientes" />
-              <img src="https://i.imgur.com/B7mQi1h.png" alt="Vista de cobros" />
-              <img src="https://i.imgur.com/URO3Ads.png" alt="Vista de finanzas" />
-              <img src="https://i.imgur.com/8qwremh.png" alt="Vista de conciliación bancaria" />
-              <img src="https://i.imgur.com/TqRObZs.png" alt="Vista de ajustes" />
+              <img id="screen-img" src="assets/screens/chat.png" alt="Pantalla de chat del panel Champis" loading="lazy" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section container">
-        <div class="section-heading">
-          <p class="eyebrow">Vista de la propuesta</p>
-          <h2>Una plataforma que combina operación, producto y crecimiento.</h2>
-        </div>
-        <div class="gallery-grid">
-          <article class="gallery-card">
-            <img src="assets/gallery-1.svg" alt="Mesa de alimentos y negocio" />
-            <div>
-              <h3>Operación más ordenada</h3>
-              <p>Visualiza y gestiona cada parte del negocio desde una sola herramienta.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <img src="assets/gallery-2.svg" alt="Comida preparada para distribución" />
-            <div>
-              <h3>Más alcance comercial</h3>
-              <p>Da un salto de calidad en la forma de atender clientes y pedidos.</p>
-            </div>
-          </article>
-          <article class="gallery-card">
-            <img src="assets/gallery-3.svg" alt="Producto alimenticio en presentación comercial" />
-            <div>
-              <h3>Experiencia más profesional</h3>
-              <p>Un canal digital que representa mejor la marca y la propuesta del negocio.</p>
-            </div>
-          </article>
+      <section id="funciones" class="section section-alt">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow"><span class="dot"></span> Funciones</p>
+            <h2>Todo lo que necesitas para ordenar tu distribución, sin complicarte.</h2>
+          </div>
+          <div class="feature-list">
+            <div class="feature-item"><span class="feature-icon">📦</span><strong>Toma de pedidos</strong><span>Anota pedidos hablando o escribiendo, sin apps complicadas.</span></div>
+            <div class="feature-item"><span class="feature-icon">👥</span><strong>Clientes</strong><span>Toda la información de tus clientes en un solo lugar.</span></div>
+            <div class="feature-item"><span class="feature-icon">📊</span><strong>Inventario</strong><span>Sabe si te alcanza el stock para un pedido antes de comprometerlo.</span></div>
+            <div class="feature-item"><span class="feature-icon">💰</span><strong>Cobranzas</strong><span>Te dice quién te debe y arma un PDF listo para WhatsApp.</span></div>
+            <div class="feature-item"><span class="feature-icon">📈</span><strong>Finanzas</strong><span>Cuánto compraste, vendiste y ganaste este mes, sin sacar la calculadora.</span></div>
+            <div class="feature-item"><span class="feature-icon">🧾</span><strong>Rendiciones y gastos</strong><span>Le sacas foto a la boleta y ella la anota sola.</span></div>
+          </div>
         </div>
       </section>
 
-      <section id="contacto" class="section section-alt">
-        <div class="container contact-grid">
-          <div>
-            <p class="eyebrow">Contacto</p>
+      <section id="contacto" class="section container">
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow"><span class="dot"></span> Contacto</p>
             <h2>¿Quieres ordenar tu negocio hablando con Sofía?</h2>
             <p>
-              Déjanos tus datos y te contaremos cómo Cafuor puede ayudar a tu distribución,
+              Déjanos tus datos y te contamos cómo Champis puede ordenar tu distribución,
               reducir el desorden y mejorar tus cobros y operaciones.
             </p>
+            <ul class="contact-points">
+              <li>🍄 Prueba gratis, sin instalar nada</li>
+              <li>⚡ Configuración simple con nuestro equipo</li>
+              <li>💬 Soporte real cuando lo necesites</li>
+            </ul>
           </div>
           <form id="contact-form" class="contact-form">
             <label>
@@ -224,12 +229,33 @@
           </form>
         </div>
       </section>
+
+      <section class="cta-band">
+        <div class="container cta-inner">
+          <div>
+            <h2>Deja de perseguir pedidos y cobros.</h2>
+            <p>Champis y Sofía lo mantienen ordenado por ti.</p>
+          </div>
+          <a class="button primary lg" href="#contacto">Probar gratis</a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container footer-content">
-        <p>© 2026 Cafuor. Todos los derechos reservados.</p>
-        <a href="http://cafuor.vercel.app/distribuidores" target="_blank" rel="noopener noreferrer">Ir a distribuidores</a>
+        <div class="footer-brand">
+          <span class="brand-logo small" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="26" height="26" role="img">
+              <path d="M20 3C10.6 3 4 9.4 4 16.4c0 2 1.6 3.6 3.6 3.6h24.8c2 0 3.6-1.6 3.6-3.6C36 9.4 29.4 3 20 3Z" fill="#e8543d"/>
+              <ellipse cx="14" cy="12" rx="2.6" ry="2.2" fill="#fbe3d6"/>
+              <ellipse cx="24" cy="10.5" rx="2" ry="1.7" fill="#fbe3d6"/>
+              <path d="M16.5 20h7l-1.1 12.4a2.4 2.4 0 0 1-4.8 0L16.5 20Z" fill="#f4d9c3"/>
+            </svg>
+          </span>
+          <span>Champis</span>
+        </div>
+        <p>© 2026 Champis. Todos los derechos reservados.</p>
+        <a href="http://cafuor.vercel.app/distribuidores" target="_blank" rel="noopener noreferrer">Ir a distribuidores →</a>
       </div>
     </footer>
 

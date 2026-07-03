@@ -290,6 +290,27 @@ h1 {
   font-size: 0.95rem;
 }
 
+.dashboard-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.tab {
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.tab.active {
+  background: #fff7ed;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
 .dashboard-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
